@@ -1,0 +1,10 @@
+resources:
+- res.yaml
+transformers:
+- transformer.yaml
+# - patch.yaml
+
+# patches:
+#   - path: host-config-patch.yaml
+#     target:
+#       kind: Deployment

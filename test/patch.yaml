@@ -1,0 +1,11 @@
+apiVersion: builtin
+kind: PatchTransformer
+metadata:
+  name: notImportantHere
+patch: |-
+  - op: add
+    path: /spec/template/spec/containers/0/volumeMounts/-
+    value:
+      name: PATCHED
+target:
+  kind: Deployment
